@@ -1,0 +1,40 @@
+@charset "UTF -8"; /* esse código serve para poder escrever com caracteres especiais */
+*{
+    padding: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to top ,#4B1073 20px,#6829A6,#7670a0,white 114%); 
+    background-attachment: fixed; /* para que o degrade fica no top */
+    text-align: justify;
+}
+main{
+   
+    background-color:#e4b498;
+    width: 38em; /*largura do main*/
+    padding:15px; /*espaçamento da borda*/
+    margin: auto; /* centraliza independente do tamanho da tela*/
+    border-radius: 3%; /*aredonda as pontas*/
+    box-shadow: 7px 10px 23px rgb(43, 34, 49);/* tamanho da altura, tamanho da largura, tamanho de quanto vai se espalhar e por fim a cor da sombra*/
+
+
+}
+p{
+    text-indent: 23px; /* espaçamento do palagrafo */
+}
+h1{
+    text-align: center;
+    color: #A64833;
+    text-shadow: 1px 1.5px 1.5px #743325d2; /* sombra para textos*/
+}
+h2{
+    font-family: medieval;
+    @font-face { /*colocando font baixada */
+        font-family: medieval; /*coloca o nome da font sua baixada da net */
+        src: url('fonts/medieval.otf') format(opentype); /*  tipos de formados para fontes : opentype ( otf ) , truetype ( ttf ) */
+    }
+    color:#A64833;
+    font-size:25px ; /* tamanho da fonte/letra */
+  /*  font-weight: 600; tamanho em negrito da fonte , tamanho e largura */
+  
+}

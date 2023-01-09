@@ -1,0 +1,22 @@
+@charset "UTF-8";
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{ /* estilizando meu link*/
+    color: rgb(110, 165, 247);
+    text-decoration: none; /*tirando o sombrinhado do link */
+    font-weight:bold; /* colocando o texto em negrito */
+}
+a:visited{  /*quando o site for visitado irar ficar nessa configuração */
+    color: rgb(24, 108, 141);
+    
+
+}
+a:hover{ /*quando passar o mouse/seta em cima  irar ficar nessa configuração */
+    color: black;
+    text-decoration: underline; /* colocando o sombrinhao do texto */
+}
+a:active{ /* quando clicar no site irar fica nessa configuração*/
+    color: green;
+}
+

@@ -1,0 +1,14 @@
+@charset "UTF-8";
+div{
+    display: inline-block; /* alinha colocando os itens na mesma linha , as div lado a lado*/
+    background-color: rgb(138, 112, 161);
+    height: 200px; /*altura*/
+    width: 200px; /*largura*/
+    border: 1px solid black; 
+    text-align: center
+
+}
+div:hover{ /* hover é quando eu passa o mouse irar mudar as configurações*/
+
+    background-color: rgb(173, 80, 80);
+}

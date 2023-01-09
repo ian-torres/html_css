@@ -1,0 +1,184 @@
+@charset "UTF-8"; /* essa tag serve para eu não ter problema no meu site em questão de acentuações*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /* import é quando eu pego uma fonte do google fonte utilizo no site*/
+
+@font-face { /*serve para usar uma fonte sua baixa e já existi no seu pc, pode coloca o nome da sua fonte e ela irar funcionar no site */
+    font-family: 'android'; /*dando o nome para minha fonte baixada*/
+    src: url('fontes/IDroid.otf') format('opentype');  /*src mostra onde o arquivo esta e format é qual anunciar o formato da sua fonte*/
+    font-weight: normal; 
+
+
+    /* os " @ " tem que ficarem sempre encima dos códigos */
+}
+
+:root{ /* Variaveis de CSS */
+ --cor0:#77E698;
+ --cor1:#24E05C;
+ --cor2:#1CAD47;
+ --cor3:#105e27;
+ --cor4:#1d4228e8;
+
+ --fonte-padrao: Arial,Verdana,Helvetica, sans-serif; /*dando os nomes para minha variaveis*/
+ --fonte-especial: 'Bebas Neue', cursive;
+ --fonte-android:'android',cursive;
+}
+*{
+    margin: 0px; /*sempre fazer essa configuração, zerar as margins e padding de tudo  os intens da página*/
+    padding: 0px;
+}
+
+
+
+
+    body{
+        background-color: #85daa1f5;
+        font-family: var(--fonte-padrao);
+    }
+   
+    header{
+        background-image: linear-gradient(to bottom, var(--cor2),var(--cor3));
+        height: 150px; /*altura do cabeçalho de 150px */
+        text-align: center; /*centralizar os textos do cabçalho */
+        padding-top: 40px; /*espaçamento da borda, para não ficar grudado em cima*/
+       
+    }
+    header > h1{
+       padding-bottom: 20px; /*espaçamento de baixo do h1*/
+     color: white;
+     font-family: var(--fonte-especial);
+     font-size: 2em;
+     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452); /*text-shadow é sombra no texto*/
+
+    }
+    header >p{
+        color:white;
+     
+        margin: auto; /*para minha largura centralizar*/
+        font-size: 1.3em; /*tamanho do meu paragrafo*/
+        padding-left: 10px; 
+        padding-right: 10px;
+        max-width: 600px; /* o tamanho maximo da minha largura do cabeçalho é de 600px para ficar mais juntinho*/
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.452);
+        margin-bottom: 25px;
+    }
+   nav{
+    background-color: var(--cor3);
+    box-shadow: 7px 6px 6px rgba(0, 0, 0, 0.397); /* sombra no block todo da barra do menu*/
+    padding: 10px; /*10px da barra de menu, para desgrudar da barra. ESPAÇAMENTO EXTERNO*/
+
+   }
+   nav >a{
+     border-radius: 10px; /*arredodando a borda*/
+    color: white;
+    text-decoration: none;
+    padding: 10px; /*10px do texto para desgruda dele mesmo o texto caixa. ESPAÇAMENTO INTERNO*/
+    font-weight: bold; /* tamanho em negrito das palavras*/
+
+   }
+   nav a:hover{
+    background-color: var(--cor0);
+    color: var(--cor4);
+    font-weight: bold;
+    transition-duration: 0.3s; /* uma animação quando passa o mouse*/
+   }
+   main{
+    background-color: white;
+     max-width: 1000px; /*Quando chega em 1000px ele para de crescer e se adaptar*/
+     min-width: 300px;  /*Quando chega no minimo de 300px ele se adapta ou quando estiver menos 1000px ele se adapta*/
+     margin: auto; /* para telas maiores ele se adapte , como por exemplo uma tv ... faz ela centralizar tambem*/
+     padding: 20px; /*espaçamento da borda*/
+     box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.548);
+     margin-bottom: 30px; /* espaçamento da margin de baixo */
+     border-bottom-right-radius: 18px;
+     border-bottom-left-radius: 18px;
+
+   }
+main h1{
+    font-family: var(--fonte-android);
+    color:var(--cor3);
+    font-weight: normal; /* colando a fonte normal sem negrito, na sua forma original*/
+}
+main h2{
+    font-family: var(--fonte-android);
+    font-size: 1.3em; /* tamanho do h2..diminuindo para não ficar do tamanho do h1*/
+    text-indent: 8px; /* um espaçamento de paragrafo */
+    background-image: linear-gradient(to right, #84EEA3, transparent); /* degrade de uma cor até fica transparente */
+    color: var(--cor3);
+}
+main p{
+    margin: 15px 0px; /* Espaçamento de cima e baixo de 15px e 0px de esquerda e direita*/
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.8em; /* espaçamento entre linhas ... "em" é maior que "px" mais recomendado para espaçamento entre linhas*/
+}
+main strong{ /* tudo que for strong vai seguir esta configuração */
+   
+    color: var(--cor3);
+    padding: 2px 6px;
+  
+}
+main a{
+    text-decoration: none;
+    background-color: #98ffb7a1;
+    color: #105e27;
+    padding: 2px 6px ; /*espaçamento de baixo e cima 2px e 6px dp espaçamento entre os lados do texto*/
+    border-radius: 6px; /* arredonda a borda */
+    font-weight: bold; /* negrito */
+}
+main a:hover{
+    text-decoration: underline;
+    color: rgba(25, 25, 136, 0.842)
+}
+div.video{
+
+    background-color: #0c461ef3;
+    margin: 0px -20px 30px -20px ; /* fazendo a margem ir para fora invez  de para dentro*/
+    padding: 20px;
+    padding-bottom: 59%;
+    position: relative;
+}
+div.video >iframe{
+    position: absolute; /* faz com que o elemento fica  sem posição*/
+    top: 5%; /*5% de distancia do top*/
+    left:5% ; /* 5% de distância da esquerda*/
+    height: 90%; /* 90% de altura do video */
+    width: 90%;  /*90% de largura do video */
+}
+main img{
+    width: 100% ;
+}
+main img.pequena{
+    max-width: 320px;/* maximo é de 320px q esta imagem irar crescer*/
+    display: block;/*tem que dar um dislay block nas imagens. pq uma imagem não é um block , deve servir para mover a imagem*/
+    margin: auto; /*faz com que a imagem se adapte , centraliza */
+}
+
+aside{
+  background-color: var(--cor0);
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.37);
+
+
+}
+aside ul{
+    columns: 2; /* colunas da lista */
+    list-style-position: inside; /* comando para mudar a posição da lista, inside é pra dentro e outside é para  fora*/
+    list-style-type: '\2714\00A0\00A0'; /* para mudar o pontinho da lista para algum emoji, '\00A0' é o espcamendo */ 
+
+
+}
+aside h3{
+    background-color: var(--cor3);
+    color: white;
+    padding: 10px;
+    margin: -10px -10px 0px -10px; /* menos 10 quer dizer q invez de distancia da borda ela vai aproximar*/
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+footer{
+    background-color: var(--cor3);
+    color: white;
+    padding: 5px;
+    text-align: center;
+}
